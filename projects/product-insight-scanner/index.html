@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="../../css/styles.css" />
   <style>
     .project-page { padding: 24px 0 64px; }
-    .hero { margin-bottom: 48px; }
     .hero h1 { margin-bottom: 12px; }
     .hero .tagline { font-size: 18px; opacity: 0.85; margin: 0; max-width: 560px; }
     .rationale { max-width: 640px; font-size: 16px; line-height: 1.65; margin: 0; opacity: 0.9; }
@@ -37,12 +36,14 @@
   <main class="container project-page">
     <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
 
-    <header class="hero">
-      <span class="hero-eyebrow">Project</span>
-      <div class="hero-accent" aria-hidden="true"></div>
-      <h1>Product Insight Scanner (Yuka-style)</h1>
-      <p class="tagline">Scan barcodes to get health, sustainability, and quality insights at a glance.</p>
-    </header>
+    <div class="hero-wrapper">
+      <header class="hero">
+        <span class="hero-eyebrow">Project</span>
+        <div class="hero-accent" aria-hidden="true"></div>
+        <h1>Product Insight Scanner (Yuka-style)</h1>
+        <p class="tagline">Scan barcodes to get health, sustainability, and quality insights at a glance.</p>
+      </header>
+    </div>
 
     <section class="section" aria-labelledby="preview-heading">
       <h2 id="preview-heading" class="section-title">UI Preview</h2>
@@ -92,6 +93,7 @@
       </ul>
     </section>
 
+    <hr class="section-divider" aria-hidden="true" />
     <section class="section" aria-labelledby="links-heading">
       <h2 id="links-heading" class="section-title">Links</h2>
       <div class="links-card">
