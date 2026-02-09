@@ -352,6 +352,16 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   z-index: 1;
 }
 
+.preview-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
 /* Project page hero – eyebrow + accent + backdrop */
 .hero-wrapper {
   position: relative;
