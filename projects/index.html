@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects — Manraj Bains</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .projects-page { padding: 32px 0 64px; }
+    .projects-intro { margin-bottom: 40px; max-width: 560px; }
+    .projects-intro p { margin: 0; font-size: 17px; color: var(--dark); opacity: 0.85; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .project-card .card { flex: 1; display: flex; flex-direction: column; }
+    .project-card h2 { margin-bottom: 8px; font-size: 20px; }
+    .project-card .description { flex: 1; margin: 0 0 20px; font-size: 15px; opacity: 0.85; line-height: 1.5; }
+    .project-card .chips { margin-bottom: 20px; }
+    .project-card .btn { align-self: flex-start; }
+  </style>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/" class="logo-link">Manraj Bains</a>
+    <a href="/projects/">Projects</a>
+  </nav>
+
+  <main class="container projects-page">
+    <header class="projects-intro">
+      <h1>Projects</h1>
+      <p>Selected work spanning product tools, health apps, and full-stack experiments.</p>
+    </header>
+
+    <ul class="projects-grid">
+      <li class="project-card">
+        <article class="card">
+          <h2>Product Insight Scanner (Yuka-style)</h2>
+          <p class="description">A consumer-facing app that scans product barcodes and surfaces health, sustainability, and quality insights—inspired by Yuka’s approach to product transparency.</p>
+          <div class="chips">
+            <ul class="chip-list">
+              <li><span class="chip">React</span></li>
+              <li><span class="chip">Node</span></li>
+              <li><span class="chip">Open Food Facts API</span></li>
+            </ul>
+          </div>
+          <a href="/projects/product-insight-scanner/" class="btn btn-primary">View Project</a>
+        </article>
+      </li>
+
+      <li class="project-card">
+        <article class="card">
+          <h2>Macro Counter App</h2>
+          <p class="description">Track daily macros and calories with a simple, focused interface. Log meals, set goals, and view progress over time.</p>
+          <div class="chips">
+            <ul class="chip-list">
+              <li><span class="chip">React</span></li>
+              <li><span class="chip">Local Storage</span></li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">View Project (coming soon)</a>
+        </article>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
