@@ -4,43 +4,192 @@
   <meta charset="UTF-8" />
   <title>Manraj Bains — Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manraj Bains — Full-Stack Developer. Portfolio of projects and experience." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body { display: flex; flex-direction: column; min-height: 100vh; text-align: center; }
-    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 24px; }
-    .home-card {
-      padding: 42px 46px;
-      max-width: 420px;
-      width: calc(100% - 40px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-    .home-card h1 { margin: 10px 0 0; font-size: 28px; letter-spacing: -0.03em; }
-    .role { font-size: 14px; font-weight: 500; letter-spacing: 0.02em; opacity: 0.85; }
-    .status { margin-top: 8px; font-size: 14px; opacity: 0.75; }
-  </style>
 </head>
 
 <body>
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="/" class="logo-link">Manraj Bains</a>
-    <a href="/projects/">Projects</a>
-  </nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <main>
-    <div class="home-card">
-      <div class="logo" aria-hidden="true">MB</div>
-      <h1>Manraj Bains</h1>
-      <div class="role">Full Stack Web Developer</div>
-      <div class="status">Portfolio under construction.</div>
-    </div>
+  <header class="site-nav" role="banner">
+    <a href="/" class="logo-link">Manraj Bains</a>
+    <nav id="nav-menu" class="nav-links" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="https://linkedin.com/in/manrajbainscode" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Manraj-Bains" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Hero: one screen -->
+    <section class="landing-hero" aria-labelledby="hero-heading">
+      <div class="landing-hero-inner">
+        <h1 id="hero-heading">Manraj Bains</h1>
+        <p class="landing-hero-role">Full-Stack Developer</p>
+        <p class="landing-hero-tagline">I build web applications that are clear, fast, and easy to use—from front-end interfaces to APIs and tooling.</p>
+        <div class="landing-hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="/resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects: most important -->
+    <section id="projects" class="landing-section landing-projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="landing-section-title">Projects</h2>
+        <ul class="landing-project-grid">
+          <li>
+            <article class="landing-project-card card">
+              <div class="landing-project-thumb">
+                <a href="/projects/product-insight-scanner/" class="landing-project-thumb-link">
+                  <img src="/projects/product-insight-scanner/preview.jpg" alt="Product Insight Scanner app interface" />
+                </a>
+              </div>
+              <div class="landing-project-body">
+                <h3 class="landing-project-title">Product Insight Scanner (Yuka-style)</h3>
+                <p class="landing-project-desc">Scan product barcodes and see health, sustainability, and quality insights at a glance.</p>
+                <ul class="chip-list">
+                  <li><span class="chip">React</span></li>
+                  <li><span class="chip">Node</span></li>
+                  <li><span class="chip">API</span></li>
+                </ul>
+                <div class="landing-project-actions">
+                  <a href="/projects/product-insight-scanner/" class="btn btn-primary">View</a>
+                  <a href="https://github.com" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="landing-project-card card">
+              <div class="landing-project-thumb" aria-hidden="true">
+                <a href="/projects/macro-counter/" class="landing-project-thumb-link">
+                  <span class="landing-project-thumb-placeholder">Macro Counter</span>
+                </a>
+              </div>
+              <div class="landing-project-body">
+                <h3 class="landing-project-title">Macro Counter App</h3>
+                <p class="landing-project-desc">Track daily macros and calories with a simple interface. Log meals, set goals, and view progress.</p>
+                <ul class="chip-list">
+                  <li><span class="chip">React</span></li>
+                  <li><span class="chip">Local Storage</span></li>
+                </ul>
+                <div class="landing-project-actions">
+                  <a href="/projects/macro-counter/" class="btn btn-primary">View</a>
+                  <a href="https://github.com" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="landing-project-card card">
+              <div class="landing-project-thumb landing-project-thumb--placeholder" aria-hidden="true">
+                <a href="/projects/ai-gym-buddy/" class="landing-project-thumb-link">
+                  <span class="landing-project-thumb-placeholder">AI Gym Buddy</span>
+                </a>
+              </div>
+              <div class="landing-project-body">
+                <h3 class="landing-project-title">AI Gym Buddy</h3>
+                <p class="landing-project-desc">AI-powered gym workout plan creator. Get personalized plans and track progress. Coming soon.</p>
+                <ul class="chip-list">
+                  <li><span class="chip">TBD</span></li>
+                </ul>
+                <div class="landing-project-actions">
+                  <a href="/projects/ai-gym-buddy/" class="btn btn-secondary">View (coming soon)</a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article class="landing-project-card card">
+              <div class="landing-project-thumb landing-project-thumb--placeholder" aria-hidden="true">
+                <a href="/projects/case-study/" class="landing-project-thumb-link">
+                  <span class="landing-project-thumb-placeholder">Case Study</span>
+                </a>
+              </div>
+              <div class="landing-project-body">
+                <h3 class="landing-project-title">Case Study</h3>
+                <p class="landing-project-desc">In-depth project breakdown: problem, approach, and outcomes. Coming soon.</p>
+                <ul class="chip-list">
+                  <li><span class="chip">TBD</span></li>
+                </ul>
+                <div class="landing-project-actions">
+                  <a href="/projects/case-study/" class="btn btn-secondary">View (coming soon)</a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <p class="landing-projects-more">
+          <a href="/projects/">View all projects →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About: short -->
+    <section id="about" class="landing-section landing-about" aria-labelledby="about-heading">
+      <div class="container container--narrow">
+        <h2 id="about-heading" class="landing-section-title">About</h2>
+        <p class="landing-about-text">I focus on building reliable web experiences and clean code. I work across the stack—from responsive UIs and accessibility to APIs and tooling—and like turning ideas into shipped products.</p>
+        <div class="landing-skills">
+          <div class="landing-skill-group">
+            <span class="landing-skill-label">Frontend</span>
+            <span class="landing-skill-items">React, TypeScript, HTML/CSS, responsive design</span>
+          </div>
+          <div class="landing-skill-group">
+            <span class="landing-skill-label">Backend</span>
+            <span class="landing-skill-items">Node.js, REST APIs, data modeling</span>
+          </div>
+          <div class="landing-skill-group">
+            <span class="landing-skill-label">Tools</span>
+            <span class="landing-skill-items">Git, VS Code, Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer" role="contentinfo">
+      <div class="container">
+        <div class="landing-footer-links">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://linkedin.com/in/manrajbainscode" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Manraj-Bains" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <p class="landing-footer-copy">© <span id="year">2025</span> Manraj Bains. All rights reserved.</p>
+      </div>
+    </footer>
   </main>
+
+  <script>
+    (function () {
+      var y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+      var t = document.querySelector('.nav-toggle');
+      var n = document.querySelector('.nav-links');
+      if (t && n) {
+        t.addEventListener('click', function () {
+          var open = n.classList.toggle('is-open');
+          t.setAttribute('aria-expanded', open);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -10,21 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../../css/styles.css" />
-  <style>
-    .project-page { padding: 24px 0 64px; }
-    .hero h1 { margin-bottom: 12px; }
-    .hero .tagline { font-size: 18px; opacity: 0.85; margin: 0; max-width: 560px; }
-    .rationale { max-width: 640px; font-size: 16px; line-height: 1.65; margin: 0; opacity: 0.9; }
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .links-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
-  </style>
 </head>
 
 <body>
@@ -44,6 +29,16 @@
         <p class="tagline">Scan barcodes to get health, sustainability, and quality insights at a glance.</p>
       </header>
     </div>
+
+    <section class="section" aria-labelledby="links-heading">
+      <h2 id="links-heading" class="section-title">Links</h2>
+      <div class="links-card">
+        <div class="links-row">
+          <a href="https://github.com/Manraj-Bains/product-insight-scanner.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button type="button" class="btn btn-secondary btn-disabled" disabled>Live Demo — Coming Soon</button>
+        </div>
+      </div>
+    </section>
 
     <section class="section" aria-labelledby="preview-heading">
       <h2 id="preview-heading" class="section-title">UI Preview</h2>
@@ -91,17 +86,6 @@
         <li><span class="chip">Open Food Facts API</span></li>
         <li><span class="chip">REST API</span></li>
       </ul>
-    </section>
-
-    <hr class="section-divider" aria-hidden="true" />
-    <section class="section" aria-labelledby="links-heading">
-      <h2 id="links-heading" class="section-title">Links</h2>
-      <div class="links-card">
-        <div class="links-row">
-          <a href="https://github.com/Manraj-Bains/manrajbains-portfolio.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <button type="button" class="btn btn-secondary btn-disabled" disabled>Live Demo — Coming Soon</button>
-        </div>
-      </div>
     </section>
   </main>
 </body>

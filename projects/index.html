@@ -10,29 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/styles.css" />
-  <style>
-    .projects-page { padding: 32px 0 64px; }
-    .projects-intro { margin-bottom: 40px; max-width: 560px; }
-    .projects-intro p { margin: 0; font-size: 17px; color: var(--dark); opacity: 0.85; }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 24px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-    .project-card .card { flex: 1; display: flex; flex-direction: column; }
-    .project-card h2 { margin-bottom: 8px; font-size: 20px; }
-    .project-card .description { flex: 1; margin: 0 0 20px; font-size: 15px; opacity: 0.85; line-height: 1.5; }
-    .project-card .chips { margin-bottom: 20px; }
-    .project-card .btn { align-self: flex-start; }
-  </style>
 </head>
 
 <body>
@@ -73,7 +50,33 @@
               <li><span class="chip">Local Storage</span></li>
             </ul>
           </div>
-          <a href="#" class="btn btn-secondary btn-disabled" aria-disabled="true">View Project (coming soon)</a>
+          <a href="/projects/macro-counter/" class="btn btn-primary">View Project</a>
+        </article>
+      </li>
+
+      <li class="project-card">
+        <article class="card">
+          <h2>AI Gym Buddy</h2>
+          <p class="description">AI-powered gym workout plan creator. Get personalized plans and track progress. Coming soon.</p>
+          <div class="chips">
+            <ul class="chip-list">
+              <li><span class="chip">TBD</span></li>
+            </ul>
+          </div>
+          <a href="/projects/ai-gym-buddy/" class="btn btn-secondary">View Project (coming soon)</a>
+        </article>
+      </li>
+
+      <li class="project-card">
+        <article class="card">
+          <h2>Case Study</h2>
+          <p class="description">In-depth project breakdown: problem, approach, and outcomes. Coming soon.</p>
+          <div class="chips">
+            <ul class="chip-list">
+              <li><span class="chip">TBD</span></li>
+            </ul>
+          </div>
+          <a href="/projects/case-study/" class="btn btn-secondary">View Project (coming soon)</a>
         </article>
       </li>
     </ul>
