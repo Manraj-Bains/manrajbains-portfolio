@@ -541,16 +541,28 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: stretch;
+}
+.projects-grid > li {
+  display: flex;
+  min-width: 0;
 }
 .project-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
 }
 .project-card .card {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 0;
+  width: 100%;
+}
+.project-card .card > .landing-project-thumb {
+  flex-shrink: 0;
 }
 .project-card h2 {
   margin-bottom: 8px;
@@ -558,16 +570,17 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
 }
 .project-card .description {
   flex: 1;
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-size: 15px;
   opacity: 0.85;
   line-height: 1.5;
 }
 .project-card .chips {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .project-card .btn {
   align-self: flex-start;
+  margin-top: auto;
 }
 
 /* ========== PLACEHOLDER PROJECT PAGE (coming soon) ========== */
