@@ -751,10 +751,19 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   list-style: none;
   margin: 0;
   padding: 0;
+  align-items: stretch;
+}
+/* Equal-height cards in each row: fill grid cell */
+.landing-project-grid > li {
+  display: flex;
+  min-width: 0;
 }
 .landing-project-card {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -763,12 +772,14 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-height: 0;
 }
 .landing-project-thumb {
   aspect-ratio: 16 / 10;
   min-height: 140px;
   position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .landing-project-thumb-link {
   display: block;
@@ -810,13 +821,16 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   font-size: 14px;
   line-height: 1.5;
   opacity: 0.88;
-  flex: 1;
+}
+.landing-project-body .chip-list {
+  margin-bottom: 4px;
 }
 .landing-project-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 4px;
+  margin-top: auto;
+  padding-top: 8px;
 }
 .landing-project-card .btn { flex-shrink: 0; }
 
