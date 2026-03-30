@@ -355,6 +355,30 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   inset: 0;
 }
 
+/* PracticePlanner case-study diagrams: responsive without cropping */
+.preview-block.case-study-image-wrap {
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+}
+
+.preview-block.case-study-image-wrap::before,
+.preview-block.case-study-image-wrap::after {
+  display: none;
+}
+
+.preview-block.case-study-image-wrap img.case-study-image {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transform: none !important;
+  margin: 1.5rem auto !important;
+  display: block !important;
+  border-radius: 12px;
+}
+
 /* Project page hero – eyebrow + accent + backdrop */
 .hero-wrapper {
   position: relative;
