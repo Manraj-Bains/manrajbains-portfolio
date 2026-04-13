@@ -4,23 +4,18 @@
   <meta charset="UTF-8" />
   <title>PracticePlanner — Training Program Builder — Manraj Bains</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../css/styles.css" />
 </head>
-
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <a href="/" class="logo-link">Manraj Bains</a>
     <a href="/projects/">Projects</a>
   </nav>
-
   <main class="container project-page">
     <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
-
     <div class="hero-wrapper">
       <header class="hero">
         <span class="hero-eyebrow">Case Study</span>
@@ -28,161 +23,59 @@
         <h1>PracticePlanner</h1>
         <p class="tagline">Train smarter. Progress faster.</p>
       </header>
-      <p class="rationale">
-        PracticePlanner is an intelligent workout planning tool that generates structured training splits and provides progression guidance, recovery insights, and adaptive recommendations based on user input.
-      </p>
     </div>
-
+    <section class="section" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="section-title">Overview</h2>
+      <p class="rationale">PracticePlanner is an intelligent training system designed to generate structured workout plans that adapt to user performance. The challenge was creating a system that balances progression, recovery, and consistency without overwhelming the user. The solution involved designing a guided interface supported by structured logic that generates personalized routines and evolves based on user input.</p>
+    </section>
+    <section class="section" aria-labelledby="role-heading">
+      <h2 id="role-heading" class="section-title">Role</h2>
+      <p class="rationale">Role: Front-End Developer. Responsible for interface design, interaction flow, and system presentation.</p>
+    </section>
+    <section class="section" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="section-title">Key Features</h2>
+      <ul class="features-grid">
+        <li><article class="card feature-card"><h3>Weekly Split Planner</h3><p>Generates structured training days aligned with user goals and schedule.</p></article></li>
+        <li><article class="card feature-card"><h3>Progression Timeline</h3><p>Tracks training progression so changes remain intentional over time.</p></article></li>
+        <li><article class="card feature-card"><h3>Recovery Insights</h3><p>Adds recovery context to support consistent and sustainable training.</p></article></li>
+        <li><article class="card feature-card"><h3>Adaptive Recommendations</h3><p>Adjusts suggestions based on updated input and training feedback.</p></article></li>
+      </ul>
+    </section>
+    <section class="section" aria-labelledby="app-heading">
+      <h2 id="app-heading" class="section-title">App</h2>
+      <div class="preview-block case-study-image-wrap">
+        <img class="case-study-image" src="/projects/practiceplanner/preview.jpg" alt="PracticePlanner final app preview" />
+      </div>
+      <p class="rationale">This preview shows the final dashboard used to manage planning, progression, and recovery guidance.</p>
+    </section>
+    <section class="section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading" class="section-title">Highlights</h2>
+      <h3>User Flow</h3>
+      <div class="preview-block case-study-image-wrap">
+        <img class="case-study-image" src="/projects/practiceplanner/userflow.png" alt="PracticePlanner user flow diagram" />
+      </div>
+      <p class="rationale">This flow outlines how training inputs move through the planner and return structured weekly guidance over time.</p>
+      <h3>System Logic</h3>
+      <p class="rationale">Inputs such as goals, training availability, and performance signals are processed through planning rules that generate split structure, progression targets, and adaptive recommendations for the next cycle.</p>
+      <h3>Iterations</h3>
+      <div class="preview-block case-study-image-wrap">
+        <img class="case-study-image" src="/projects/practiceplanner/iterations.png" alt="PracticePlanner design iterations" />
+      </div>
+      <p class="rationale">The interface evolved from a simpler planning layout into a clearer dashboard structure with stronger readability and usability.</p>
+      <h3>Development Snapshot</h3>
+      <div class="preview-block case-study-image-wrap">
+        <img class="case-study-image" src="/projects/practiceplanner/snippet.jpg" alt="PracticePlanner code snippet" />
+      </div>
+      <p class="rationale">This implementation snapshot shows the project as a working frontend prototype, not just a static concept.</p>
+    </section>
     <section class="section" aria-labelledby="links-heading">
       <h2 id="links-heading" class="section-title">Links</h2>
       <div class="links-card">
         <div class="links-row">
-          <a href="https://github.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/Manraj-Bains/practicePlanner.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://practice-planner-one.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
         </div>
       </div>
-    </section>
-
-    <section class="section" aria-labelledby="final-product-heading">
-      <h2 id="final-product-heading" class="section-title">Final Product</h2>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/preview.jpg" alt="PracticePlanner final app preview" />
-      </div>
-      <p class="rationale">
-        This image shows the final dashboard experience with training splits, progression guidance, and recovery-aware recommendations.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="rationale-heading">
-      <h2 id="rationale-heading" class="section-title">Rationale</h2>
-      <p class="rationale">
-        PracticePlanner is a training program builder designed to help individuals create structured workout plans and improve long-term progression. Many people train without a clear system, often following inconsistent routines or conflicting advice, which leads to plateaus and inefficient results. A key challenge was simplifying complex training concepts such as volume, progression, and recovery into a format that is easy to understand and apply. The solution was to develop a system that generates a weekly training structure while also providing progression guidance, recovery insights, and adaptive recommendations based on user inputs. The interface prioritizes clarity and organization, presenting information in a structured dashboard that allows users to quickly understand their plan and make informed adjustments.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="problem-heading">
-      <h2 id="problem-heading" class="section-title">Problem</h2>
-      <p class="rationale">
-        Many individuals train without a consistent structure, relying on scattered information from social media, generic programs, or ad hoc routines. Without a clear model for progression, it becomes difficult to know when to increase load, when to back off, or how to balance training stress with recovery. The result is often stalled progress, confusion about next steps, and a higher risk of burnout or injury.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="challenges-heading">
-      <h2 id="challenges-heading" class="section-title">Challenges</h2>
-      <p class="rationale">
-        Balancing progression, recovery, and usability required trade-offs: guidance had to be specific enough to be useful without turning the product into a dense coaching manual.
-      </p>
-      <p class="rationale">
-        Simplifying training logic meant distilling principles such as volume, intensity, and deloading into rules and outputs that could be computed and explained in plain language.
-      </p>
-      <p class="rationale">
-        Presenting useful recommendations without overwhelming users called for careful information hierarchy—only surfacing what matters for the current week and next decision, rather than exposing every variable at once.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="solution-heading">
-      <h2 id="solution-heading" class="section-title">Solution</h2>
-      <p class="rationale">
-        The application generates structured training plans organized around a weekly split so users always see what to train and when. Progression guidance is built into the system so load and volume evolve in a controlled way over time.
-      </p>
-      <p class="rationale">
-        Recovery insights contextualize training stress relative to rest and readiness signals from user input. Adaptive recommendations adjust suggestions when inputs change, keeping the plan aligned with current capacity and goals.
-      </p>
-      <p class="rationale">
-        A dashboard-oriented layout groups plan summary, progression, and recommendations in one place so complex information remains scannable and actionable.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="user-flow-heading">
-      <h2 id="user-flow-heading" class="section-title">User Flow</h2>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/userflow.png" alt="PracticePlanner user flow diagram" />
-      </div>
-      <p class="rationale">
-        This diagram outlines how training inputs are translated into a structured plan and how users move through the system over time.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
-      <ul class="features-grid">
-        <li>
-          <article class="card feature-card">
-            <h3>Weekly Split Planner</h3>
-            <p>Organizes training days and focus areas into a coherent weekly structure. Users can see at a glance how sessions distribute across the week and how each block supports the broader program.</p>
-          </article>
-        </li>
-        <li>
-          <article class="card feature-card">
-            <h3>Progression Timeline</h3>
-            <p>Visualizes how volume and intensity are expected to change over time. This makes long-term progression legible and helps users anticipate upcoming phases instead of guessing from week to week.</p>
-          </article>
-        </li>
-        <li>
-          <article class="card feature-card">
-            <h3>Recovery Insights</h3>
-            <p>Highlights recovery-related signals derived from user input and training load. The goal is to encourage sustainable pacing and reduce the chance of overreaching without burying users in metrics.</p>
-          </article>
-        </li>
-        <li>
-          <article class="card feature-card">
-            <h3>Adaptive Recommendations</h3>
-            <p>Updates guidance when inputs or performance cues shift, so the plan remains relevant. Recommendations stay tied to the structured plan rather than generic tips disconnected from the user’s actual schedule.</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section" aria-labelledby="process-heading">
-      <h2 id="process-heading" class="section-title">Process</h2>
-      <h3>Research / Problem Framing</h3>
-      <p class="rationale">
-        Early work focused on identifying where people lose consistency: unclear weekly structure, conflicting online advice, and uncertainty about how to progress. That framing anchored the product on structured splits and explicit progression rather than open-ended logging alone.
-      </p>
-      <h3>System Planning</h3>
-      <p class="rationale">
-        Inputs and outputs were mapped so the system could translate user goals, availability, and feedback into a weekly plan plus follow-on guidance. The logic layer was designed to stay explainable—each major output could be tied back to a small set of rules the interface could summarize.
-      </p>
-      <h3>Interface Design</h3>
-      <p class="rationale">
-        A dashboard layout was chosen to reduce cognitive load: the current plan, progression context, and recommendations appear together instead of across disconnected screens. This supports quick scanning and supports informed adjustments without deep navigation.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="iterations-heading">
-      <h2 id="iterations-heading" class="section-title">Iterations</h2>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/iterations.png" alt="PracticePlanner design iterations" />
-      </div>
-      <p class="rationale">
-        The product evolved from a simpler planning concept into a more structured dashboard that presents workout planning, progression, and recovery in a clearer and more usable way.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="development-heading">
-      <h2 id="development-heading" class="section-title">Development Snapshot</h2>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/snippet.jpg" alt="PracticePlanner code snippet" />
-      </div>
-      <p class="rationale">
-        The project was developed as a working frontend prototype to validate the dashboard workflow and interactions.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="outcome-heading">
-      <h2 id="outcome-heading" class="section-title">Outcome</h2>
-      <p class="rationale">
-        The resulting product offers a clearer, more structured path for building and adjusting workout plans. Users gain a stable weekly framework, visible progression logic, and targeted guidance that stays aligned with their inputs—supporting better training decisions over time.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="tech-heading">
-      <h2 id="tech-heading" class="section-title">Tech Stack</h2>
-      <ul class="chip-list">
-        <li><span class="chip">React</span></li>
-        <li><span class="chip">Tailwind</span></li>
-        <li><span class="chip">Fitness</span></li>
-      </ul>
     </section>
   </main>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Product Insight Scanner — Manraj Bains</title>
+  <title>Product Insight Scanner - Manraj Bains</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,16 +19,47 @@
   </nav>
 
   <main class="container project-page">
-    <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
+    <a href="/projects/" class="back-link" aria-label="Back to projects">&larr; Projects</a>
 
     <div class="hero-wrapper">
       <header class="hero">
         <span class="hero-eyebrow">Project</span>
         <div class="hero-accent" aria-hidden="true"></div>
         <h1>Product Insight Scanner (Yuka-style)</h1>
-        <p class="tagline">Scan barcodes to get health, sustainability, and quality insights at a glance.</p>
+        <p class="tagline">Scan product data with clear health and transparency insights.</p>
       </header>
     </div>
+
+    <section class="section" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="section-title">Overview</h2>
+      <p class="rationale">Product Insight Scanner is a consumer-focused application that helps users evaluate everyday products by scanning and analyzing ingredient and nutritional data. The challenge was translating complex and inconsistent product information into a format that is easy to understand. The solution involved structuring data from external APIs into a clear scoring system and visual interface that highlights health, sustainability, and ingredient transparency.</p>
+    </section>
+
+    <section class="section" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="section-title">Key Features</h2>
+      <ul class="features-grid">
+        <li><article class="card feature-card"><h3>Barcode Scanning</h3><p>Supports quick lookup of product records through barcode input.</p></article></li>
+        <li><article class="card feature-card"><h3>Health Scoring</h3><p>Converts ingredient and nutrition details into a readable score.</p></article></li>
+        <li><article class="card feature-card"><h3>Ingredient Transparency</h3><p>Highlights additives and ingredients in plain language.</p></article></li>
+        <li><article class="card feature-card"><h3>Sustainability Signals</h3><p>Surfaces useful product context beyond basic nutrition values.</p></article></li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="app-heading">
+      <h2 id="app-heading" class="section-title">App</h2>
+      <div class="preview-block">
+        <img src="preview.jpg" alt="Product Insight Scanner app interface" />
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading" class="section-title">Highlights</h2>
+      <ul class="features-grid">
+        <li><article class="card feature-card"><h3>Readable Data Experience</h3><p>Presents technical product data as actionable consumer insights.</p></article></li>
+        <li><article class="card feature-card"><h3>Fast Evaluation Flow</h3><p>Reduces friction from scan to decision with concise visual summaries.</p></article></li>
+        <li><article class="card feature-card"><h3>Strong Assignment Framing</h3><p>Demonstrates API integration, scoring logic, and polished UX communication.</p></article></li>
+      </ul>
+    </section>
 
     <section class="section" aria-labelledby="links-heading">
       <h2 id="links-heading" class="section-title">Links</h2>
@@ -38,54 +69,6 @@
           <a href="https://product-insight-scanner-khaki.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
         </div>
       </div>
-    </section>
-
-    <section class="section" aria-labelledby="preview-heading">
-      <h2 id="preview-heading" class="section-title">UI Preview</h2>
-      <div class="preview-block">
-        <img src="preview.jpg" alt="Product Insight Scanner app interface" />
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="rationale-heading">
-      <h2 id="rationale-heading" class="section-title">Rationale</h2>
-      <p class="rationale">
-        This project was built to explore how product transparency tools can help consumers make informed choices without overwhelming them. The scanner draws on open datasets and a Yuka-style experience: quick scans, clear scores, and concise explanations. The goal was to demonstrate a clean, accessible flow from barcode input to actionable insight, with room to extend into sustainability and nutrition breakdowns. It serves as a portfolio piece that shows both front-end polish and sensible API integration.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
-      <ul class="features-grid">
-        <li>
-          <article class="card feature-card">
-            <h3>Barcode scanning</h3>
-            <p>Enter or scan product barcodes to instantly look up product data from open food and consumer databases.</p>
-          </article>
-        </li>
-        <li>
-          <article class="card feature-card">
-            <h3>Health & quality scores</h3>
-            <p>Simple, visual scores and badges so users can quickly assess product quality and nutritional impact.</p>
-          </article>
-        </li>
-        <li>
-          <article class="card feature-card">
-            <h3>Transparent breakdown</h3>
-            <p>Ingredient lists, additives, and sustainability cues presented in plain language with minimal clutter.</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section" aria-labelledby="tech-heading">
-      <h2 id="tech-heading" class="section-title">Tech Stack</h2>
-      <ul class="chip-list">
-        <li><span class="chip">React</span></li>
-        <li><span class="chip">Node.js</span></li>
-        <li><span class="chip">Open Food Facts API</span></li>
-        <li><span class="chip">REST API</span></li>
-      </ul>
     </section>
   </main>
 </body>
