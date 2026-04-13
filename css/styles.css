@@ -664,6 +664,62 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   align-items: center;
 }
 
+.logic-showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+.logic-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logic-copy h3 {
+  margin: 0 0 10px;
+}
+.logic-copy p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.logic-code-card {
+  background: #101716;
+  color: #e8eeec;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 14px 30px rgba(16, 23, 22, 0.28);
+  overflow: hidden;
+}
+.logic-code-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.logic-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.logic-dot-red { background: #ff5f56; }
+.logic-dot-yellow { background: #ffbd2e; }
+.logic-dot-green { background: #27c93f; }
+.logic-code-card pre {
+  margin: 0;
+  padding: 18px 18px 20px;
+  overflow-x: auto;
+}
+.logic-code-card code {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.65;
+  color: inherit;
+}
+
 /* ========== LANDING PAGE ========== */
 .skip-link {
   position: absolute;
@@ -969,6 +1025,7 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   .landing-section { padding: 48px 0; }
   .landing-project-grid { grid-template-columns: 1fr; }
   .landing-skills { flex-direction: column; gap: 20px; }
+  .logic-showcase { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

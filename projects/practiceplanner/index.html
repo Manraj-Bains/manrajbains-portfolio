@@ -16,66 +16,81 @@
   </nav>
   <main class="container project-page">
     <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
+
     <div class="hero-wrapper">
       <header class="hero">
         <span class="hero-eyebrow">Case Study</span>
         <div class="hero-accent" aria-hidden="true"></div>
         <h1>PracticePlanner</h1>
-        <p class="tagline">Train smarter. Progress faster.</p>
+        <p class="tagline">An adaptive training planner built for clarity and consistency.</p>
       </header>
     </div>
+
     <section class="section" aria-labelledby="overview-heading">
       <h2 id="overview-heading" class="section-title">Overview</h2>
       <p class="rationale">PracticePlanner is an intelligent training system designed to generate structured workout plans that adapt to user performance. The challenge was creating a system that balances progression, recovery, and consistency without overwhelming the user. The solution involved designing a guided interface supported by structured logic that generates personalized routines and evolves based on user input.</p>
     </section>
+
     <section class="section" aria-labelledby="role-heading">
       <h2 id="role-heading" class="section-title">Role</h2>
       <p class="rationale">Role: Front-End Developer. Responsible for interface design, interaction flow, and system presentation.</p>
     </section>
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
+
+    <section class="section" aria-labelledby="user-flow-heading">
+      <h2 id="user-flow-heading" class="section-title">User Flow</h2>
+      <p class="rationale">Goals → Plan → Track → Adjust</p>
       <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Weekly Split Planner</h3><p>Generates structured training days aligned with user goals and schedule.</p></article></li>
-        <li><article class="card feature-card"><h3>Progression Timeline</h3><p>Tracks training progression so changes remain intentional over time.</p></article></li>
-        <li><article class="card feature-card"><h3>Recovery Insights</h3><p>Adds recovery context to support consistent and sustainable training.</p></article></li>
-        <li><article class="card feature-card"><h3>Adaptive Recommendations</h3><p>Adjusts suggestions based on updated input and training feedback.</p></article></li>
+        <li><article class="card feature-card"><h3>Goals</h3></article></li>
+        <li><article class="card feature-card"><h3>Plan Generated</h3></article></li>
+        <li><article class="card feature-card"><h3>Track Progress</h3></article></li>
+        <li><article class="card feature-card"><h3>Updated Plan</h3></article></li>
       </ul>
     </section>
+
+    <section class="section" aria-labelledby="system-logic-heading">
+      <h2 id="system-logic-heading" class="section-title">System Logic</h2>
+      <div class="logic-showcase">
+        <article class="card feature-card logic-copy">
+          <h3>Plan Generation Logic</h3>
+          <p>Input data is structured and processed to generate a balanced training plan based on user goals and performance.</p>
+        </article>
+        <article class="logic-code-card" aria-label="Plan generation code sample">
+          <div class="logic-code-bar" aria-hidden="true">
+            <span class="logic-dot logic-dot-red"></span>
+            <span class="logic-dot logic-dot-yellow"></span>
+            <span class="logic-dot logic-dot-green"></span>
+          </div>
+          <pre><code>const handleGenerate = () => {
+  const newPlan = generatePlan(userInputs);
+  setPlan(newPlan);
+};</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="iterations-heading">
+      <h2 id="iterations-heading" class="section-title">Iterations</h2>
+      <p class="rationale">Simplified layout and flow for clarity and usability</p>
+      <div class="preview-block case-study-image-wrap">
+        <img class="case-study-image" src="/projects/practiceplanner/iterations.png" alt="PracticePlanner design iterations" />
+      </div>
+    </section>
+
     <section class="section" aria-labelledby="app-heading">
       <h2 id="app-heading" class="section-title">App</h2>
       <div class="preview-block case-study-image-wrap">
         <img class="case-study-image" src="/projects/practiceplanner/preview.jpg" alt="PracticePlanner final app preview" />
       </div>
-      <p class="rationale">This preview shows the final dashboard used to manage planning, progression, and recovery guidance.</p>
     </section>
+
     <section class="section" aria-labelledby="highlights-heading">
       <h2 id="highlights-heading" class="section-title">Highlights</h2>
-      <h3>User Flow</h3>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/userflow.png" alt="PracticePlanner user flow diagram" />
-      </div>
-      <p class="rationale">This flow outlines how training inputs move through the planner and return structured weekly guidance over time.</p>
-      <h3>System Logic</h3>
-      <p class="rationale">Inputs such as goals, training availability, and performance signals are processed through planning rules that generate split structure, progression targets, and adaptive recommendations for the next cycle.</p>
-      <h3>Iterations</h3>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/iterations.png" alt="PracticePlanner design iterations" />
-      </div>
-      <p class="rationale">The interface evolved from a simpler planning layout into a clearer dashboard structure with stronger readability and usability.</p>
-      <h3>Development Snapshot</h3>
-      <div class="preview-block case-study-image-wrap">
-        <img class="case-study-image" src="/projects/practiceplanner/snippet.jpg" alt="PracticePlanner code snippet" />
-      </div>
-      <p class="rationale">This implementation snapshot shows the project as a working frontend prototype, not just a static concept.</p>
-    </section>
-    <section class="section" aria-labelledby="links-heading">
-      <h2 id="links-heading" class="section-title">Links</h2>
-      <div class="links-card">
-        <div class="links-row">
-          <a href="https://github.com/Manraj-Bains/practicePlanner.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://practice-planner-one.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        </div>
-      </div>
+      <ul class="rationale">
+        <li>Adaptive workout generation</li>
+        <li>Structured progression logic</li>
+        <li>Clean and focused interface</li>
+        <li>Simple, guided user experience</li>
+      </ul>
     </section>
   </main>
 </body>
