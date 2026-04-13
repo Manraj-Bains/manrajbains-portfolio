@@ -719,6 +719,13 @@ h3 { font-size: clamp(18px, 2vw, 20px); letter-spacing: -0.02em; }
   line-height: 1.65;
   color: inherit;
 }
+.logic-flow {
+  margin: 0;
+  padding: 0 18px 16px;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  color: rgba(232, 238, 236, 0.82);
+}
 
 /* ========== LANDING PAGE ========== */
 .skip-link {

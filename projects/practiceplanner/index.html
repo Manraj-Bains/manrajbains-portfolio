@@ -48,11 +48,10 @@
     </section>
 
     <section class="section" aria-labelledby="system-logic-heading">
-      <h2 id="system-logic-heading" class="section-title">System Logic</h2>
+      <h2 id="system-logic-heading" class="section-title">Plan Generation Logic</h2>
       <div class="logic-showcase">
         <article class="card feature-card logic-copy">
-          <h3>Plan Generation Logic</h3>
-          <p>Input data is structured and processed to generate a balanced training plan based on user goals and performance.</p>
+          <p>Training plans are generated using simple rules based on user goals, frequency, and performance data to balance progression and recovery.</p>
         </article>
         <article class="logic-code-card" aria-label="Plan generation code sample">
           <div class="logic-code-bar" aria-hidden="true">
@@ -60,10 +59,16 @@
             <span class="logic-dot logic-dot-yellow"></span>
             <span class="logic-dot logic-dot-green"></span>
           </div>
-          <pre><code>const handleGenerate = () => {
-  const newPlan = generatePlan(userInputs);
-  setPlan(newPlan);
-};</code></pre>
+          <pre><code>if (goal === "strength") {
+  sets = 5;
+  reps = 5;
+} else if (goal === "hypertrophy") {
+  sets = 3;
+  reps = 10;
+}
+
+plan = buildPlan({ sets, reps, frequency, performance });</code></pre>
+          <p class="logic-flow">Goal → Rules → Plan → Adjustments</p>
         </article>
       </div>
     </section>
