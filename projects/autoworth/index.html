@@ -2,76 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AutoWorth - Car Listing Analyzer - Manraj Bains</title>
+  <title>AutoWorth — Case Study — Manraj Bains</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../css/styles.css" />
 </head>
-
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <a href="/" class="logo-link">Manraj Bains</a>
     <a href="/projects/">Projects</a>
   </nav>
 
-  <main class="container project-page">
-    <a href="/projects/" class="back-link" aria-label="Back to projects">&larr; Projects</a>
+  <main class="container project-page case-study-page">
+    <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
 
-    <div class="hero-wrapper">
-      <header class="hero">
-        <span class="hero-eyebrow">Project</span>
-        <div class="hero-accent" aria-hidden="true"></div>
-        <h1>AutoWorth</h1>
-        <p class="tagline">Evaluate car deals in seconds.</p>
-      </header>
-    </div>
+    <header class="case-study-hero hero-wrapper" aria-labelledby="cs-title">
+      <div class="case-study-hero-top">
+        <div>
+          <span class="hero-eyebrow">Design case study</span>
+          <div class="hero-accent" aria-hidden="true"></div>
+          <h1 id="cs-title">AutoWorth</h1>
+          <p class="tagline">A listing-first assistant that reads price, mileage, and risk signals together—so “good deal or walk away?” is answerable before you open ten browser tabs.</p>
+        </div>
+      </div>
 
-    <section class="section" aria-labelledby="links-heading">
-      <h2 id="links-heading" class="section-title">Links</h2>
-      <div class="links-card">
-        <div class="links-row">
-          <a href="https://github.com/Manraj-Bains/autoWorth.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://auto-worth.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      <figure class="case-study-hero-figure">
+        <div class="preview-block case-study-hero-preview">
+          <img src="preview.jpg" alt="AutoWorth interface showing listing analysis and recommendation" />
+        </div>
+        <figcaption class="case-study-caption">Core read: inputs on one side, synthesized verdict and score on the other.</figcaption>
+      </figure>
+
+      <div class="case-study-meta" role="group" aria-label="Project details">
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span class="case-study-meta-value">Front-end · UI · decision layout</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span class="case-study-meta-value">Course-scale build</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Tools</span><span class="case-study-meta-value">React · Tailwind CSS</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Type</span><span class="case-study-meta-value">Web app · decision support</span></div>
+      </div>
+
+      <section class="section case-study-links-wrap" aria-labelledby="links-heading">
+        <h2 id="links-heading" class="visually-hidden">Project links</h2>
+        <div class="links-card">
+          <div class="links-row">
+            <a href="https://github.com/Manraj-Bains/autoWorth.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://auto-worth.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <hr class="section-divider case-study-divider" aria-hidden="true" />
+
+    <section class="section case-study-section" aria-labelledby="problem-heading">
+      <p class="case-study-kicker">Why this exists</p>
+      <h2 id="problem-heading" class="section-title">Problem</h2>
+      <div class="case-study-prose">
+        <p>Used listings mix signal and noise: asking price, mileage, vague condition lines, and inconsistent seller language. Buyers bounce between calculators and gut feel, then either overpay or walk away from a fine car because the cognitive load was too high in the moment.</p>
+        <p>AutoWorth targets the decision moment: compress the listing into a small set of indicators and a clear recommendation state—not a spreadsheet disguised as a web page.</p>
+      </div>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="goals-heading">
+      <p class="case-study-kicker">Intent</p>
+      <h2 id="goals-heading" class="section-title">Goals</h2>
+      <ul class="case-study-goals">
+        <li><strong>Fast verdict</strong> — Make buy / negotiate / avoid legible without reading every field twice.</li>
+        <li><strong>Comparable structure</strong> — Present price, mileage, and risk in the same layout across listings.</li>
+        <li><strong>Honest limits</strong> — Do not pretend the app inspects the car; frame outputs as interpretation of what was posted.</li>
+        <li><strong>Prototype depth</strong> — Enough logic in the UI to demo tradeoffs, not a production pricing engine.</li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="role-heading">
+      <p class="case-study-kicker">Ownership</p>
+      <h2 id="role-heading" class="section-title">Role &amp; scope</h2>
+      <div class="case-study-split">
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">What I owned</h3>
+          <p>Layout for listing intake, score and recommendation presentation, and how secondary risks sit relative to the headline verdict.</p>
+        </div>
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">Scope &amp; constraints</h3>
+          <p><strong>In scope:</strong> front-end analysis presentation, responsive layout, demo deployment.</p>
+          <p><strong>Out of scope:</strong> VIN history integrations, dealer CRM, or actuarial-grade valuation models.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="overview-heading">
-      <h2 id="overview-heading" class="section-title">Overview</h2>
-      <p class="rationale">AutoWorth is a decision-support tool that helps users evaluate vehicle listings by identifying pricing inconsistencies and potential risks. The challenge was interpreting unstructured listing data and presenting it in a way that supports quick decision-making. The solution involved creating a simplified analysis system that compares key indicators and provides clear recommendations such as buy, negotiate, or avoid.</p>
+    <section class="section case-study-section" aria-labelledby="process-heading">
+      <p class="case-study-kicker">How the work moved</p>
+      <h2 id="process-heading" class="section-title">Process overview</h2>
+      <p class="rationale case-study-lead">Decision tools need a clear order: capture inputs, show intermediate signals, then surface the recommendation so users can sanity-check before trusting it.</p>
+      <ol class="case-study-phases">
+        <li><span class="case-study-phase-num">01</span><span class="case-study-phase-body"><strong>Frame</strong> — List which fields actually change a buyer’s mind on Classifieds sites.</span></li>
+        <li><span class="case-study-phase-num">02</span><span class="case-study-phase-body"><strong>Model UI</strong> — Map fields to a score + narrative chips users can scan.</span></li>
+        <li><span class="case-study-phase-num">03</span><span class="case-study-phase-body"><strong>Design hierarchy</strong> — Keep the verdict visible while scrolling supporting detail.</span></li>
+        <li><span class="case-study-phase-num">04</span><span class="case-study-phase-body"><strong>Refine</strong> — Tighten spacing and labels after running real sample listings through the UI.</span></li>
+      </ol>
     </section>
 
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Value Score System</h3><p>Summarizes listing quality through a single readable score.</p></article></li>
-        <li><article class="card feature-card"><h3>Buy / Negotiate / Avoid</h3><p>Provides clear recommendation states for faster decisions.</p></article></li>
-        <li><article class="card feature-card"><h3>Price vs Market Insight</h3><p>Compares listing values against typical market expectations.</p></article></li>
-        <li><article class="card feature-card"><h3>Mileage Analysis</h3><p>Assesses usage patterns relative to listing age and value.</p></article></li>
-        <li><article class="card feature-card"><h3>Risk Indicators</h3><p>Flags potential red flags before purchase commitment.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="research-heading">
+      <p class="case-study-kicker">Framing</p>
+      <h2 id="research-heading" class="section-title">Research &amp; insights</h2>
+      <p class="rationale case-study-lead">Informal review of listing patterns on common marketplaces and a few think-alouds with friends shopping used cars—not formal research.</p>
+      <ul class="case-study-insights">
+        <li>People compare <strong>asking price vs. gut “normal”</strong> before anything else.</li>
+        <li><strong>Mileage relative to age</strong> triggers suspicion fast when it is out of band.</li>
+        <li><strong>Risk language</strong> works better as short flags than long paragraphs.</li>
       </ul>
     </section>
 
-    <section class="section" aria-labelledby="app-heading">
-      <h2 id="app-heading" class="section-title">App</h2>
-      <div class="preview-block">
-        <img src="preview.jpg" alt="AutoWorth app preview" />
+    <section class="section case-study-section case-study-section--emphasis" aria-labelledby="decisions-heading">
+      <p class="case-study-kicker">Intentional choices</p>
+      <h2 id="decisions-heading" class="section-title">Key design decisions</h2>
+      <ul class="case-study-decisions">
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Verdict beside inputs</h3>
+          <p><strong>Decision:</strong> Keep the recommendation and score adjacent to the listing summary, not on a second page.</p>
+          <p><strong>Why:</strong> Buyers constantly cross-check numbers; splitting view increases error.</p>
+          <p><strong>Usability:</strong> Less eye travel between price, mileage, and outcome.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Discrete recommendation states</h3>
+          <p><strong>Decision:</strong> Use explicit buy / negotiate / avoid language instead of a vague gradient.</p>
+          <p><strong>Why:</strong> The job is a decision, not a mood board.</p>
+          <p><strong>Usability:</strong> Easier to act on under time pressure.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Risk chips, not essays</h3>
+          <p><strong>Decision:</strong> Surface red flags as compact tags with optional expansion later.</p>
+          <p><strong>Why:</strong> Long warnings get skimmed or ignored.</p>
+          <p><strong>Usability:</strong> Critical signals register in peripheral vision.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Single primary analysis action</h3>
+          <p><strong>Decision:</strong> One clear CTA to run analysis after fields are present.</p>
+          <p><strong>Why:</strong> Multiple paths create “did it run?” confusion in demos.</p>
+          <p><strong>Usability:</strong> Predictable flow for first-time viewers and graders.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="system-heading">
+      <p class="case-study-kicker">Structure</p>
+      <h2 id="system-heading" class="section-title">From listing fields to a defensible read</h2>
+      <p class="rationale case-study-lead">The product is rule-driven interpretation: normalize what the seller posted, compare a few heuristics, then map outcomes to UI states users already understand. The design task is to expose enough of that chain to feel credible without exposing so much math that the screen becomes homework.</p>
+
+      <h3 class="case-study-subtitle">Heuristic sketch</h3>
+      <div class="logic-showcase">
+        <article class="card feature-card logic-copy">
+          <p>The code sample is illustrative of the idea—branch on signals, then assemble a plan object the UI can render. The point for the case study is traceability: outputs should map to inputs a buyer can re-check.</p>
+        </article>
+        <article class="logic-code-card" aria-label="Simplified decision logic">
+          <div class="logic-code-bar" aria-hidden="true">
+            <span class="logic-dot logic-dot-red"></span>
+            <span class="logic-dot logic-dot-yellow"></span>
+            <span class="logic-dot logic-dot-green"></span>
+          </div>
+          <pre><code>const signals = parseListing(input);
+const value = scoreAgainstNorms(signals);
+const verdict = pickVerdict(value, signals.risks);
+
+return { value, verdict, signals };</code></pre>
+          <p class="logic-flow">Parse → Score → Verdict</p>
+        </article>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading" class="section-title">Highlights</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Decision Clarity</h3><p>Transforms scattered listing details into understandable outcomes.</p></article></li>
-        <li><article class="card feature-card"><h3>Practical Risk Framing</h3><p>Surfaces risk signals alongside value context for balanced evaluation.</p></article></li>
-        <li><article class="card feature-card"><h3>Portfolio-Ready Structure</h3><p>Pairs analysis logic with a professional, scannable UI presentation.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="iteration-heading">
+      <p class="case-study-kicker">Evolution</p>
+      <h2 id="iteration-heading" class="section-title">Iteration &amp; refinement</h2>
+      <p class="rationale case-study-lead">First layouts buried the verdict under charts. Later versions pulled the recommendation and score into a stable top band so scrolling only revealed supporting evidence, not the answer itself.</p>
+      <figure class="case-study-figure">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="preview.jpg" alt="AutoWorth UI after hierarchy refinement" />
+        </div>
+        <figcaption class="case-study-caption">Iteration: verdict band pinned visually above supporting metrics.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="final-heading">
+      <p class="case-study-kicker">Outcome</p>
+      <h2 id="final-heading" class="section-title">Final product</h2>
+      <figure class="case-study-figure case-study-figure--hero">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="preview.jpg" alt="AutoWorth final interface" />
+        </div>
+        <figcaption class="case-study-caption">Shipped prototype: listing, synthesized score, and recommendation in one pass.</figcaption>
+      </figure>
+      <ul class="case-study-callouts" aria-label="Interface highlights">
+        <li><strong>Value read</strong> — Single number backed by the fields that moved it.</li>
+        <li><strong>Negotiation cue</strong> — When the UI suggests negotiate, supporting reasons stay nearby.</li>
+        <li><strong>Risk surfacing</strong> — Short flags for issues that would change a test drive plan.</li>
       </ul>
     </section>
 
+    <section class="section case-study-section" aria-labelledby="build-heading">
+      <p class="case-study-kicker">Implementation</p>
+      <h2 id="build-heading" class="section-title">Build snapshot</h2>
+      <p class="rationale case-study-lead">Tailwind-heavy layout kept iteration fast: spacing tokens made it cheap to try alternate hierarchies when sample listings exposed weak alignment between numbers and labels.</p>
+      <figure class="case-study-figure case-study-figure--narrow">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="snippet.jpg" alt="AutoWorth code excerpt" />
+        </div>
+        <figcaption class="case-study-caption">Representative component markup from the repo.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section case-study-section--close" aria-labelledby="reflection-heading">
+      <p class="case-study-kicker">Closing</p>
+      <h2 id="reflection-heading" class="section-title">Reflection &amp; next steps</h2>
+      <div class="case-study-prose">
+        <p><strong>Insight:</strong> The design risk was false precision—pretty charts that imply certainty. Keeping copy grounded in “posted data” and pairing scores with visible inputs did more for trust than any single visual treatment.</p>
+        <p><strong>Tradeoff:</strong> Simple heuristics are easy to demo but would not survive every market; that is a known ceiling for this assignment.</p>
+        <p><strong>Next:</strong> Test with real listings from two price bands; add history or title flags if data becomes available; stress-test mobile with long seller descriptions.</p>
+      </div>
+    </section>
   </main>
 </body>
 </html>

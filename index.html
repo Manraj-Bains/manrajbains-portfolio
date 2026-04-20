@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Manraj Bains — Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Manraj Bains — Full-Stack Developer. Portfolio of projects and experience." />
+  <meta name="description" content="Manraj Bains — developer and interface-focused work: case studies in training tools, consumer transparency, identification apps, and decision support." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +36,13 @@
     <!-- Hero: one screen -->
     <section class="landing-hero" aria-labelledby="hero-heading">
       <div class="landing-hero-inner">
+        <p class="landing-hero-eyebrow">Portfolio</p>
         <h1 id="hero-heading">Manraj Bains</h1>
-        <p class="landing-hero-role">Full-Stack Developer</p>
-        <p class="landing-hero-tagline">I build web applications that are clear, fast, and easy to use—from front-end interfaces to APIs and tooling.</p>
+        <p class="landing-hero-role">Developer · UI &amp; product thinking</p>
+        <p class="landing-hero-tagline">I ship web apps end to end, with emphasis on clear structure, honest scope, and interfaces that explain themselves—especially where data, rules, and user decisions meet.</p>
         <div class="landing-hero-ctas">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="/resume.pdf" download="Manraj-Bains-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          <a href="#projects" class="btn btn-primary">View case studies</a>
+          <a href="/resume.pdf" download="Manraj-Bains-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Download resume</a>
         </div>
       </div>
     </section>
@@ -49,18 +50,21 @@
     <!-- Projects: most important -->
     <section id="projects" class="landing-section landing-projects" aria-labelledby="projects-heading">
       <div class="container">
-        <h2 id="projects-heading" class="landing-section-title">Projects</h2>
+        <div class="landing-projects-head">
+          <h2 id="projects-heading" class="landing-section-title">Selected work</h2>
+          <p class="landing-projects-lead">Each project below is written as a case study—problem, process, decisions, and outcome—not only a screenshot and stack list.</p>
+        </div>
         <ul class="landing-project-grid">
           <li>
             <article class="landing-project-card card">
               <div class="landing-project-thumb">
                 <a href="/projects/bloomscan/" class="landing-project-thumb-link">
-                  <img src="/projects/bloomscan/snippet.jpg" alt="BloomScan code snippet" />
+                  <img src="/projects/bloomscan/snippet.jpg" alt="BloomScan interface preview" />
                 </a>
               </div>
               <div class="landing-project-body">
                 <h3 class="landing-project-title">BloomScan</h3>
-                <p class="landing-project-desc">Identify flowers from a single image and get structured care guidance.</p>
+                <p class="landing-project-desc">Plant ID often feels like a database dump—this app keeps one photo path and surfaces care and safety in scannable blocks.</p>
                 <ul class="chip-list">
                   <li><span class="chip">React</span></li>
                   <li><span class="chip">TypeScript</span></li>
@@ -78,12 +82,12 @@
             <article class="landing-project-card card">
               <div class="landing-project-thumb">
                 <a href="/projects/product-insight-scanner/" class="landing-project-thumb-link">
-                  <img src="/projects/product-insight-scanner/snippet.jpg" alt="Product Insight Scanner code snippet" />
+                  <img src="/projects/product-insight-scanner/snippet.jpg" alt="Product Insight Scanner interface preview" />
                 </a>
               </div>
               <div class="landing-project-body">
-                <h3 class="landing-project-title">Product Insight Scanner (Yuka-style)</h3>
-                <p class="landing-project-desc">Scan product barcodes and see health, sustainability, and quality insights at a glance.</p>
+                <h3 class="landing-project-title">Product Insight Scanner</h3>
+                <p class="landing-project-desc">Open product data is noisy—this flow normalizes barcode lookup into scores and plain-language breakdowns for quick in-aisle reads.</p>
                 <ul class="chip-list">
                   <li><span class="chip">React</span></li>
                   <li><span class="chip">Node</span></li>
@@ -98,15 +102,16 @@
           </li>
 
           <li>
-            <article class="landing-project-card card">
+            <article class="landing-project-card card landing-project-card--featured">
               <div class="landing-project-thumb">
+                <span class="landing-project-badge" aria-hidden="true">Case study</span>
                 <a href="/projects/practiceplanner/" class="landing-project-thumb-link">
-                  <img src="/projects/practiceplanner/snippet.jpg" alt="PracticePlanner code snippet" />
+                  <img src="/projects/practiceplanner/snippet.jpg" alt="PracticePlanner interface preview" />
                 </a>
               </div>
               <div class="landing-project-body">
                 <h3 class="landing-project-title">PracticePlanner</h3>
-                <p class="landing-project-desc">Smart workout planning with progression tracking and adaptive recommendations.</p>
+                <p class="landing-project-desc">Training apps fail when the week has no spine—structured plans, progression, and recovery cues in one dashboard narrative.</p>
                 <ul class="chip-list">
                   <li><span class="chip">React</span></li>
                   <li><span class="chip">UI/UX</span></li>
@@ -123,12 +128,12 @@
             <article class="landing-project-card card">
               <div class="landing-project-thumb">
                 <a href="/projects/autoworth/" class="landing-project-thumb-link">
-                  <img src="/projects/autoworth/snippet.jpg" alt="AutoWorth code snippet" />
+                  <img src="/projects/autoworth/snippet.jpg" alt="AutoWorth interface preview" />
                 </a>
               </div>
               <div class="landing-project-body">
                 <h3 class="landing-project-title">AutoWorth</h3>
-                <p class="landing-project-desc">Quickly evaluate used car listings with value scoring and decision insights.</p>
+                <p class="landing-project-desc">Listings mix signal and noise—this UI compresses price, mileage, and risk into a clear buy / negotiate / avoid read.</p>
                 <ul class="chip-list">
                   <li><span class="chip">React</span></li>
                   <li><span class="chip">UI/UX</span></li>
@@ -152,7 +157,7 @@
     <section id="about" class="landing-section landing-about" aria-labelledby="about-heading">
       <div class="container container--narrow">
         <h2 id="about-heading" class="landing-section-title">About</h2>
-        <p class="landing-about-text">I focus on building reliable web experiences and clean code. I work across the stack—from responsive UIs and accessibility to APIs and tooling—and like turning ideas into shipped products.</p>
+        <p class="landing-about-text">I build full-stack web projects and care how structure shows up in the UI—ordering, defaults, and honest empty states—not only polish. Most of my recent work is documented as case studies so the reasoning behind layouts and flows is visible, not just the shipped screen.</p>
         <div class="landing-skills">
           <div class="landing-skill-group">
             <span class="landing-skill-label">Frontend</span>

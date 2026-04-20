@@ -2,75 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BloomScan — Flower Detection App — Manraj Bains</title>
+  <title>BloomScan — Case Study — Manraj Bains</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../css/styles.css" />
 </head>
-
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <a href="/" class="logo-link">Manraj Bains</a>
     <a href="/projects/">Projects</a>
   </nav>
 
-  <main class="container project-page">
-    <a href="/projects/" class="back-link" aria-label="Back to projects">&larr; Projects</a>
+  <main class="container project-page case-study-page">
+    <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
 
-    <div class="hero-wrapper">
-      <header class="hero">
-        <span class="hero-eyebrow">Project</span>
-        <div class="hero-accent" aria-hidden="true"></div>
-        <h1>BloomScan</h1>
-        <p class="tagline">Identify flowers instantly from a single photo.</p>
-      </header>
-    </div>
+    <header class="case-study-hero hero-wrapper" aria-labelledby="cs-title">
+      <div class="case-study-hero-top">
+        <div>
+          <span class="hero-eyebrow">Design case study</span>
+          <div class="hero-accent" aria-hidden="true"></div>
+          <h1 id="cs-title">BloomScan</h1>
+          <p class="tagline">Turn a single photo into an identifiable plant profile—care and safety included—without burying people in botanical databases.</p>
+        </div>
+      </div>
 
-    <section class="section" aria-labelledby="links-heading">
-      <h2 id="links-heading" class="section-title">Links</h2>
-      <div class="links-card">
-        <div class="links-row">
-          <a href="https://github.com/Manraj-Bains/flower.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://flower-gamma-seven.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      <figure class="case-study-hero-figure">
+        <div class="preview-block case-study-hero-preview">
+          <img src="/projects/bloomscan/preview.jpg" alt="BloomScan interface showing scan flow and result layout" />
+        </div>
+        <figcaption class="case-study-caption">Primary flow: upload → analysis state → structured result with care cues.</figcaption>
+      </figure>
+
+      <div class="case-study-meta" role="group" aria-label="Project details">
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span class="case-study-meta-value">Front-end · UI · flow</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span class="case-study-meta-value">Course-scale build</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Tools</span><span class="case-study-meta-value">React · TypeScript</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Type</span><span class="case-study-meta-value">Web app · identification</span></div>
+      </div>
+
+      <section class="section case-study-links-wrap" aria-labelledby="links-heading">
+        <h2 id="links-heading" class="visually-hidden">Project links</h2>
+        <div class="links-card">
+          <div class="links-row">
+            <a href="https://github.com/Manraj-Bains/flower.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://flower-gamma-seven.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <hr class="section-divider case-study-divider" aria-hidden="true" />
+
+    <section class="section case-study-section" aria-labelledby="problem-heading">
+      <p class="case-study-kicker">Why this exists</p>
+      <h2 id="problem-heading" class="section-title">Problem</h2>
+      <div class="case-study-prose">
+        <p>Plant ID apps often dump Latin names and long care articles before answering the simple question: “What is this, and is it safe on my balcony?” That mismatch makes the result feel technical instead of actionable.</p>
+        <p>BloomScan was framed around immediacy: one photo in, a structured profile out—identification, care basics, and safety signals in a scan-friendly layout.</p>
+      </div>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="goals-heading">
+      <p class="case-study-kicker">Intent</p>
+      <h2 id="goals-heading" class="section-title">Goals</h2>
+      <ul class="case-study-goals">
+        <li><strong>Fast read</strong> — Make the first screen after analysis answer name, confidence, and “what do I do with this plant?”</li>
+        <li><strong>Structured output</strong> — Use repeatable blocks (colors, season, light, water) instead of one long paragraph.</li>
+        <li><strong>Honest uncertainty</strong> — Leave room for low-confidence states without pretending the model is infallible.</li>
+        <li><strong>Shippable UI</strong> — Keep scope to a front-end that could plug into a real service later.</li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="role-heading">
+      <p class="case-study-kicker">Ownership</p>
+      <h2 id="role-heading" class="section-title">Role &amp; scope</h2>
+      <div class="case-study-split">
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">What I owned</h3>
+          <p>Screen structure for upload, loading, success, and error paths; presentation of results; spacing and hierarchy so dense plant data stays scannable.</p>
+        </div>
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">Scope &amp; constraints</h3>
+          <p><strong>In scope:</strong> responsive layout, component states, copy tone for errors and empty uploads.</p>
+          <p><strong>Out of scope:</strong> training a new vision model from scratch or building a full plant encyclopedia backend.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="overview-heading">
-      <h2 id="overview-heading" class="section-title">Overview</h2>
-      <p class="rationale">BloomScan is a visual identification tool designed to help users recognize flowers and access essential care information from a single photo. The challenge was presenting plant data in a way that feels immediate and easy to understand, rather than technical or overwhelming. The solution was a streamlined interface that accepts an image input and returns a structured profile including species identification, care guidance, and safety information.</p>
+    <section class="section case-study-section" aria-labelledby="process-heading">
+      <p class="case-study-kicker">How the work moved</p>
+      <h2 id="process-heading" class="section-title">Process overview</h2>
+      <p class="rationale case-study-lead">Same rhythm as other work on this portfolio: frame the user job, map states, design screens, then tighten with a running build.</p>
+      <ol class="case-study-phases">
+        <li><span class="case-study-phase-num">01</span><span class="case-study-phase-body"><strong>Frame</strong> — Define the “happy path” and the failure states users actually hit (bad lighting, wrong file).</span></li>
+        <li><span class="case-study-phase-num">02</span><span class="case-study-phase-body"><strong>Map</strong> — Wire upload → processing → result so the UI never leaves the user guessing what the app is doing.</span></li>
+        <li><span class="case-study-phase-num">03</span><span class="case-study-phase-body"><strong>Design</strong> — Lock a card system for species + care + safety.</span></li>
+        <li><span class="case-study-phase-num">04</span><span class="case-study-phase-body"><strong>Refine</strong> — Reduce chrome; test on small widths where one-handed use matters.</span></li>
+      </ol>
     </section>
 
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Photo-Based Identification</h3><p>Uploads an image and returns likely flower identification quickly.</p></article></li>
-        <li><article class="card feature-card"><h3>Care Guidance Summary</h3><p>Displays concise care instructions for watering, sunlight, and handling.</p></article></li>
-        <li><article class="card feature-card"><h3>Structured Result Cards</h3><p>Presents identification and safety details in a clean, readable format.</p></article></li>
-        <li><article class="card feature-card"><h3>Fast Interaction Flow</h3><p>Minimizes steps between image upload and actionable plant insights.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="research-heading">
+      <p class="case-study-kicker">Framing</p>
+      <h2 id="research-heading" class="section-title">Research &amp; insights</h2>
+      <p class="rationale case-study-lead">Informal review of existing plant apps and a few hallway conversations—not a formal study. The pattern was consistent: people screenshot results, they do not read five paragraphs.</p>
+      <ul class="case-study-insights">
+        <li>Users want <strong>scannable badges</strong> (light, water, season) before deep text.</li>
+        <li><strong>Errors need tone</strong> — a failed scan should read as “try again,” not as a stack trace.</li>
+        <li><strong>One primary action per step</strong> keeps the flow honest on mobile.</li>
       </ul>
     </section>
 
-    <section class="section" aria-labelledby="app-heading">
-      <h2 id="app-heading" class="section-title">App</h2>
-      <div class="preview-block">
-        <img src="/projects/bloomscan/preview.jpg" alt="BloomScan app preview" />
+    <section class="section case-study-section case-study-section--emphasis" aria-labelledby="decisions-heading">
+      <p class="case-study-kicker">Intentional choices</p>
+      <h2 id="decisions-heading" class="section-title">Key design decisions</h2>
+      <ul class="case-study-decisions">
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Dedicated analysis state</h3>
+          <p><strong>Decision:</strong> Show an explicit “working” surface between upload and result.</p>
+          <p><strong>Why:</strong> Silent waits feel broken; users retry or leave.</p>
+          <p><strong>Usability:</strong> Sets expectations and reduces duplicate submissions.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Profile cards over prose</h3>
+          <p><strong>Decision:</strong> Break species, care, and safety into bounded regions.</p>
+          <p><strong>Why:</strong> Dense paragraphs hide the one line someone came for.</p>
+          <p><strong>Usability:</strong> Eyes land in the same place after repeat use.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Photo-first hierarchy</h3>
+          <p><strong>Decision:</strong> Keep the user’s image visible alongside results.</p>
+          <p><strong>Why:</strong> It anchors trust—“this output belongs to this photo.”</p>
+          <p><strong>Usability:</strong> Easier to compare when scrolling on a phone.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Limited branching</h3>
+          <p><strong>Decision:</strong> Avoid extra modes; one scan path with clear recovery.</p>
+          <p><strong>Why:</strong> Scope stayed small; depth lives in the result, not the menu.</p>
+          <p><strong>Usability:</strong> Faster completion for first-time visitors.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="system-heading">
+      <p class="case-study-kicker">Structure</p>
+      <h2 id="system-heading" class="section-title">Designing the identification pipeline</h2>
+      <p class="rationale case-study-lead">From a design angle, the product is a pipeline: image in, normalized response out, then a presentation layer that turns raw labels into a profile people can act on. The UI’s job is to make each stage legible—not to expose every technical detail.</p>
+
+      <h3 class="case-study-subtitle">Request → profile (simplified)</h3>
+      <div class="logic-showcase">
+        <article class="card feature-card logic-copy">
+          <p>The interface mirrors that sequence so users always know whether they are waiting on upload, inference, or rendering. That alignment is what keeps the experience calm when latency exists.</p>
+        </article>
+        <article class="logic-code-card" aria-label="Simplified client flow">
+          <div class="logic-code-bar" aria-hidden="true">
+            <span class="logic-dot logic-dot-red"></span>
+            <span class="logic-dot logic-dot-yellow"></span>
+            <span class="logic-dot logic-dot-green"></span>
+          </div>
+          <pre><code>async function analyzePhoto(file) {
+  setStatus("processing");
+  const raw = await requestIdentification(file);
+  return mapToProfile(raw);
+}</code></pre>
+          <p class="logic-flow">Upload → Service → Structured UI</p>
+        </article>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading" class="section-title">Highlights</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Clarity First</h3><p>Information hierarchy prioritizes identification confidence and practical next steps.</p></article></li>
-        <li><article class="card feature-card"><h3>Design + Utility</h3><p>Balances visual simplicity with useful context for real-world plant care decisions.</p></article></li>
-        <li><article class="card feature-card"><h3>Portfolio-Ready Execution</h3><p>Demonstrates full-stack project framing with polished front-end presentation.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="iteration-heading">
+      <p class="case-study-kicker">Evolution</p>
+      <h2 id="iteration-heading" class="section-title">Iteration &amp; refinement</h2>
+      <p class="rationale case-study-lead">Early layouts leaned on a single scrolling column. Later passes separated scan, status, and result so each state had breathing room and clearer primary actions.</p>
+      <figure class="case-study-figure">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="/projects/bloomscan/preview.jpg" alt="BloomScan UI after layout refinement" />
+        </div>
+        <figcaption class="case-study-caption">Same build, tightened hierarchy: analysis and result regions read as distinct steps.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="final-heading">
+      <p class="case-study-kicker">Outcome</p>
+      <h2 id="final-heading" class="section-title">Final product</h2>
+      <figure class="case-study-figure case-study-figure--hero">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="/projects/bloomscan/preview.jpg" alt="BloomScan final interface" />
+        </div>
+        <figcaption class="case-study-caption">Shipped prototype: photo, action, and structured result on a single calm surface.</figcaption>
+      </figure>
+      <ul class="case-study-callouts" aria-label="Interface highlights">
+        <li><strong>Scan path</strong> — One obvious entry for the photo that drives the rest of the screen.</li>
+        <li><strong>Result grid</strong> — Care facts broken into scannable units.</li>
+        <li><strong>Status language</strong> — Errors and waits written for humans, not logs.</li>
       </ul>
     </section>
 
+    <section class="section case-study-section" aria-labelledby="build-heading">
+      <p class="case-study-kicker">Implementation</p>
+      <h2 id="build-heading" class="section-title">Build snapshot</h2>
+      <p class="rationale case-study-lead">The front end is built as components that mirror the flow above—so state changes in code line up with what users see between upload and profile.</p>
+      <figure class="case-study-figure case-study-figure--narrow">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="/projects/bloomscan/snippet.jpg" alt="BloomScan React component structure excerpt" />
+        </div>
+        <figcaption class="case-study-caption">Representative structure from the repo.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section case-study-section--close" aria-labelledby="reflection-heading">
+      <p class="case-study-kicker">Closing</p>
+      <h2 id="reflection-heading" class="section-title">Reflection &amp; next steps</h2>
+      <div class="case-study-prose">
+        <p><strong>Insight:</strong> The biggest win was treating latency as a first-class design problem—without that middle state, the rest of the UI feels untrustworthy no matter how polished the result card is.</p>
+        <p><strong>Tradeoff:</strong> A thinner feature set meant less “wow” on paper, but it kept the story honest for a student timeline.</p>
+        <p><strong>Next:</strong> Test with a handful of non-expert users on real garden photos; add explicit accessibility review for color-only cues; document confidence thresholds in the UI copy.</p>
+      </div>
+    </section>
   </main>
 </body>
 </html>

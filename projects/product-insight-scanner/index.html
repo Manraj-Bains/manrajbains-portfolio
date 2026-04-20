@@ -2,75 +2,225 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Product Insight Scanner - Manraj Bains</title>
+  <title>Product Insight Scanner — Case Study — Manraj Bains</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="../../css/styles.css" />
 </head>
-
 <body>
   <nav class="site-nav" aria-label="Main navigation">
     <a href="/" class="logo-link">Manraj Bains</a>
     <a href="/projects/">Projects</a>
   </nav>
 
-  <main class="container project-page">
-    <a href="/projects/" class="back-link" aria-label="Back to projects">&larr; Projects</a>
+  <main class="container project-page case-study-page">
+    <a href="/projects/" class="back-link" aria-label="Back to projects">← Projects</a>
 
-    <div class="hero-wrapper">
-      <header class="hero">
-        <span class="hero-eyebrow">Project</span>
-        <div class="hero-accent" aria-hidden="true"></div>
-        <h1>Product Insight Scanner (Yuka-style)</h1>
-        <p class="tagline">Scan product data with clear health and transparency insights.</p>
-      </header>
-    </div>
+    <header class="case-study-hero hero-wrapper" aria-labelledby="cs-title">
+      <div class="case-study-hero-top">
+        <div>
+          <span class="hero-eyebrow">Design case study</span>
+          <div class="hero-accent" aria-hidden="true"></div>
+          <h1 id="cs-title">Product Insight Scanner</h1>
+          <p class="tagline">A barcode-led product reader that turns messy open data into a small set of scores and plain-language cues—so someone in a store can decide without opening five tabs.</p>
+        </div>
+      </div>
 
-    <section class="section" aria-labelledby="links-heading">
-      <h2 id="links-heading" class="section-title">Links</h2>
-      <div class="links-card">
-        <div class="links-row">
-          <a href="https://github.com/Manraj-Bains/product-insight-scanner.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://product-insight-scanner-khaki.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      <figure class="case-study-hero-figure">
+        <div class="preview-block case-study-hero-preview">
+          <img src="preview.jpg" alt="Product Insight Scanner showing product lookup and score presentation" />
+        </div>
+        <figcaption class="case-study-caption">Scan path: lookup → normalized fields → readable summary.</figcaption>
+      </figure>
+
+      <div class="case-study-meta" role="group" aria-label="Project details">
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Role</span><span class="case-study-meta-value">Front-end · API integration · UI</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Timeline</span><span class="case-study-meta-value">Course-scale build</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Tools</span><span class="case-study-meta-value">React · Node.js · REST</span></div>
+        <div class="case-study-meta-item"><span class="case-study-meta-label">Type</span><span class="case-study-meta-value">Consumer web · transparency</span></div>
+      </div>
+
+      <section class="section case-study-links-wrap" aria-labelledby="links-heading">
+        <h2 id="links-heading" class="visually-hidden">Project links</h2>
+        <div class="links-card">
+          <div class="links-row">
+            <a href="https://github.com/Manraj-Bains/product-insight-scanner.git" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://product-insight-scanner-khaki.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <hr class="section-divider case-study-divider" aria-hidden="true" />
+
+    <section class="section case-study-section" aria-labelledby="problem-heading">
+      <p class="case-study-kicker">Why this exists</p>
+      <h2 id="problem-heading" class="section-title">Problem</h2>
+      <div class="case-study-prose">
+        <p>Ingredient lists and nutrition panels are accurate on the label and hostile on a phone screen. Most people are not trying to become dietitians in the aisle—they want a fast read on whether a product is roughly aligned with what they care about.</p>
+        <p>This project asks how far you can get with open data if you commit to a narrow job: scan, summarize, explain in one place.</p>
+      </div>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="goals-heading">
+      <p class="case-study-kicker">Intent</p>
+      <h2 id="goals-heading" class="section-title">Goals</h2>
+      <ul class="case-study-goals">
+        <li><strong>Reduce cognitive load</strong> — Replace raw tables with a small scoring vocabulary users can learn once.</li>
+        <li><strong>Stay honest about data</strong> — Surface missing fields and API gaps instead of inventing detail.</li>
+        <li><strong>Fast loop</strong> — Optimize for barcode in, verdict visible without deep navigation.</li>
+        <li><strong>Explainability</strong> — Pair scores with short rationale text, not only color badges.</li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="role-heading">
+      <p class="case-study-kicker">Ownership</p>
+      <h2 id="role-heading" class="section-title">Role &amp; scope</h2>
+      <div class="case-study-split">
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">What I owned</h3>
+          <p>Client request flow, presentation of API payloads, error and empty states, and the visual hierarchy between score, ingredients, and context chips.</p>
+        </div>
+        <div class="card feature-card case-study-split-card">
+          <h3 class="case-study-h3">Scope &amp; constraints</h3>
+          <p><strong>In scope:</strong> Open Food Facts–style lookup path, scoring presentation, responsive layout.</p>
+          <p><strong>Out of scope:</strong> Owning the full global product database or certifying medical claims.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="overview-heading">
-      <h2 id="overview-heading" class="section-title">Overview</h2>
-      <p class="rationale">Product Insight Scanner is a consumer-focused application that helps users evaluate everyday products by scanning and analyzing ingredient and nutritional data. The challenge was translating complex and inconsistent product information into a format that is easy to understand. The solution involved structuring data from external APIs into a clear scoring system and visual interface that highlights health, sustainability, and ingredient transparency.</p>
+    <section class="section case-study-section" aria-labelledby="process-heading">
+      <p class="case-study-kicker">How the work moved</p>
+      <h2 id="process-heading" class="section-title">Process overview</h2>
+      <p class="rationale case-study-lead">Data-heavy products need the same narrative discipline as visual apps: what enters, what transforms, what leaves.</p>
+      <ol class="case-study-phases">
+        <li><span class="case-study-phase-num">01</span><span class="case-study-phase-body"><strong>Frame</strong> — Decide which signals matter for a first screen vs. secondary detail.</span></li>
+        <li><span class="case-study-phase-num">02</span><span class="case-study-phase-body"><strong>Shape data</strong> — Normalize inconsistent API fields into a stable view model.</span></li>
+        <li><span class="case-study-phase-num">03</span><span class="case-study-phase-body"><strong>Design UI</strong> — Match the mental model: product identity → scores → breakdown.</span></li>
+        <li><span class="case-study-phase-num">04</span><span class="case-study-phase-body"><strong>Harden</strong> — Handle not-found, slow network, and partial nutrition.</span></li>
+      </ol>
     </section>
 
-    <section class="section" aria-labelledby="features-heading">
-      <h2 id="features-heading" class="section-title">Key Features</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Barcode Scanning</h3><p>Supports quick lookup of product records through barcode input.</p></article></li>
-        <li><article class="card feature-card"><h3>Health Scoring</h3><p>Converts ingredient and nutrition details into a readable score.</p></article></li>
-        <li><article class="card feature-card"><h3>Ingredient Transparency</h3><p>Highlights additives and ingredients in plain language.</p></article></li>
-        <li><article class="card feature-card"><h3>Sustainability Signals</h3><p>Surfaces useful product context beyond basic nutrition values.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="research-heading">
+      <p class="case-study-kicker">Framing</p>
+      <h2 id="research-heading" class="section-title">Research &amp; insights</h2>
+      <p class="rationale case-study-lead">Review of similar transparency apps and a few informal scans of real products. The friction was rarely “missing a barcode”—it was inconsistent payloads and jargon-heavy additives lists.</p>
+      <ul class="case-study-insights">
+        <li>Users anchor on a <strong>single headline score</strong> before they expand detail.</li>
+        <li><strong>Additives need translation</strong> — codes alone do not communicate risk at a glance.</li>
+        <li><strong>Trust drops</strong> when the app hides uncertainty (unknown ingredients, incomplete nutrition).</li>
       </ul>
     </section>
 
-    <section class="section" aria-labelledby="app-heading">
-      <h2 id="app-heading" class="section-title">App</h2>
-      <div class="preview-block">
-        <img src="preview.jpg" alt="Product Insight Scanner app interface" />
+    <section class="section case-study-section case-study-section--emphasis" aria-labelledby="decisions-heading">
+      <p class="case-study-kicker">Intentional choices</p>
+      <h2 id="decisions-heading" class="section-title">Key design decisions</h2>
+      <ul class="case-study-decisions">
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Score-first layout</h3>
+          <p><strong>Decision:</strong> Put the composite read and product identity above the fold before ingredients expand.</p>
+          <p><strong>Why:</strong> Matches the in-store question: “Roughly good or not?”</p>
+          <p><strong>Usability:</strong> One glance before scrolling into detail.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Explicit empty and error paths</h3>
+          <p><strong>Decision:</strong> Treat “not found” and “partial data” as designed states, not exceptions.</p>
+          <p><strong>Why:</strong> Open datasets are messy; pretending completeness erodes trust.</p>
+          <p><strong>Usability:</strong> Users know what to try next (different code, retry, check spelling).</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Chunked ingredient reading</h3>
+          <p><strong>Decision:</strong> Break additives and macros into scannable groups instead of one wall.</p>
+          <p><strong>Why:</strong> Long lists defeat the point of a scanner app.</p>
+          <p><strong>Usability:</strong> Easier to compare two products mentally.</p>
+        </li>
+        <li class="card feature-card">
+          <h3 class="case-study-h3">Narrow feature promise</h3>
+          <p><strong>Decision:</strong> Stay close to scan-and-explain rather than building a full lifestyle dashboard.</p>
+          <p><strong>Why:</strong> Keeps the assignment defensible and the UI coherent.</p>
+          <p><strong>Usability:</strong> Faster task completion for the core job.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="system-heading">
+      <p class="case-study-kicker">Structure</p>
+      <h2 id="system-heading" class="section-title">Turning API data into a readable product story</h2>
+      <p class="rationale case-study-lead">The design problem is not “call an API”—it is deciding what to throw away so the screen stays legible. The client maps raw records into a view model the UI can render predictably; scores and copy sit on top of that layer so presentation stays stable when fields are missing.</p>
+
+      <h3 class="case-study-subtitle">Normalization sketch</h3>
+      <div class="logic-showcase">
+        <article class="card feature-card logic-copy">
+          <p>This pattern keeps rendering dumb and transformation explicit: easier to debug when a barcode returns half a nutrition table, and easier to explain in critique.</p>
+        </article>
+        <article class="logic-code-card" aria-label="Simplified data shaping">
+          <div class="logic-code-bar" aria-hidden="true">
+            <span class="logic-dot logic-dot-red"></span>
+            <span class="logic-dot logic-dot-yellow"></span>
+            <span class="logic-dot logic-dot-green"></span>
+          </div>
+          <pre><code>const product = await fetchByBarcode(code);
+const viewModel = normalizeProduct(product);
+return {
+  scores: deriveScores(viewModel),
+  highlights: pickHighlights(viewModel)
+};</code></pre>
+          <p class="logic-flow">Fetch → Normalize → Present</p>
+        </article>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="highlights-heading">
-      <h2 id="highlights-heading" class="section-title">Highlights</h2>
-      <ul class="features-grid">
-        <li><article class="card feature-card"><h3>Readable Data Experience</h3><p>Presents technical product data as actionable consumer insights.</p></article></li>
-        <li><article class="card feature-card"><h3>Fast Evaluation Flow</h3><p>Reduces friction from scan to decision with concise visual summaries.</p></article></li>
-        <li><article class="card feature-card"><h3>Strong Assignment Framing</h3><p>Demonstrates API integration, scoring logic, and polished UX communication.</p></article></li>
+    <section class="section case-study-section" aria-labelledby="iteration-heading">
+      <p class="case-study-kicker">Evolution</p>
+      <h2 id="iteration-heading" class="section-title">Iteration &amp; refinement</h2>
+      <p class="rationale case-study-lead">Earlier drafts tried to show everything the API returned. Later passes cut secondary metrics and tightened typography so the score and rationale stayed the focal point on small screens.</p>
+      <figure class="case-study-figure">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="preview.jpg" alt="Product Insight Scanner after information hierarchy refinement" />
+        </div>
+        <figcaption class="case-study-caption">Refinement pass: fewer competing blocks; clearer path from product header to scores.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section" aria-labelledby="final-heading">
+      <p class="case-study-kicker">Outcome</p>
+      <h2 id="final-heading" class="section-title">Final product</h2>
+      <figure class="case-study-figure case-study-figure--hero">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="preview.jpg" alt="Final Product Insight Scanner interface" />
+        </div>
+        <figcaption class="case-study-caption">Shipped flow: identity, scores, and explainable detail in one vertical rhythm.</figcaption>
+      </figure>
+      <ul class="case-study-callouts" aria-label="Interface highlights">
+        <li><strong>Barcode entry</strong> — Obvious primary path with feedback on lookup state.</li>
+        <li><strong>Score + rationale</strong> — Numbers paired with short text so badges are not the only signal.</li>
+        <li><strong>Ingredient scan</strong> — Grouped lists that respect mobile thumb reach.</li>
       </ul>
     </section>
 
+    <section class="section case-study-section" aria-labelledby="build-heading">
+      <p class="case-study-kicker">Implementation</p>
+      <h2 id="build-heading" class="section-title">Build snapshot</h2>
+      <p class="rationale case-study-lead">The split between Node and the client exists so the browser is not holding secrets or duplicating validation—the UI stays focused on presentation while the server handles fetch and shaping concerns.</p>
+      <figure class="case-study-figure case-study-figure--narrow">
+        <div class="preview-block case-study-image-wrap">
+          <img class="case-study-image" src="snippet.jpg" alt="Product Insight Scanner code excerpt" />
+        </div>
+        <figcaption class="case-study-caption">Representative module from the repo.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section case-study-section case-study-section--close" aria-labelledby="reflection-heading">
+      <p class="case-study-kicker">Closing</p>
+      <h2 id="reflection-heading" class="section-title">Reflection &amp; next steps</h2>
+      <div class="case-study-prose">
+        <p><strong>Insight:</strong> The interface quality tracked how disciplined the view model was. When normalization was sloppy, the UI had to lie or clutter; fixing structure upstream made layout decisions easier.</p>
+        <p><strong>Tradeoff:</strong> A simple scoring model is easier to explain but cannot capture every dietary nuance—that is an honest limit for this scope.</p>
+        <p><strong>Next:</strong> User test with ten real products people actually buy; add clearer sourcing for where each score comes from; tighten keyboard and screen-reader paths for the scan field.</p>
+      </div>
+    </section>
   </main>
 </body>
 </html>
